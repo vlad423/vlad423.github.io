@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Конспект</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/cssmenu.min.css" rel="stylesheet" type="text/css">
+  <!--<link href="css/hover.min.css" rel="stylesheet" type="text/css">-->
+  <script src="js/jquery-2.2.0.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+</head>
+
+<body>
+<script>$(function() {
+  $.scrolline();
+});
+</script>
+<header>
+  <img src="img/leklogo.jpg" alt="logo" width="150px" height="106px"/>
+  <h1><em>Курс&nbsp;лекцій&nbsp;</em></h1>
+</header>
+<nav id="cssmenu">
+  <ul>
+    <li class="active"><a href="index.html"><span>Вступ</span></a></li>
+    <li class="has-sub"><a href="#"><span>Вибір предмету</span></a>
+      <ul>
+          <li><a href="#song10"><span>Програмування<br>Автор:_______</span></a></li>
+          <li><a href="#song9"><span><br></span></a></li>
+          <li><a href="#song8"><span><br></span></a></li>
+          <li><a href="#song7"><span><br></span></a></li>
+          <li><a href="#song6"><span><br></span></a></li>
+          <li><a href="#song5"><span><br></span></a></li>
+          <li><a href="#song4"><span><br></span></a></li>
+          <li><a href="#song3"><span><br></span></a></li>
+          <li><a href="#song2"><span><br></span></a></li>
+          <li class="last"><a href="#song1"><span><br></span></a></li>
+      </ul>
+    </li>
+    <li class="has-sub"><a href="#"><span>Лекції</span></a>
+      <ul>
+        <li><a href="kons.html"><span>Лекційний матеріал</span></a></li>
+        <li class="last"><a href="#"><span>Конспект</span></a></li>
+      </ul>
+    </li>
+    <li class="last"><a
+        href="https://www.instagram.com/tanec4kaaa/?igshid=epky42jcdy69"
+        target="new"><span>Контакти</span></a></li>
+  </ul>
+</nav>
+
+<div id="slider">
+  <ul class="rslides">
+    <li><img src="img/javalogo.jpg" alt="Dylan"></li>
+    <li><img src="img/javalogo.jpg" alt="RS"></li>
+    <li><img src="img/javalogo.jpg" alt="beatles"></li>
+  </ul>
+  </div>
+
+
+<div id="mainWrapper">
+  <article class="lyric">
+    <section>
+      <h2 id="lyric10">Програмування</h2>
+      <div>
+        <p class="t">
+            Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Distinctio, doloribus.
+        </p>
+      </div>
+      <hr>
+    </section>
+    
+    
+  </article>
+  <div style="clear:both"></div>
+</div>
+<footer>
+
+  <div id="social">
+    <div class="footerContent feedback">
+      <form action="//formspree.io/____" name="feedback" method="post">
+        <fieldset>
+          <legend>Ваші відгуки:</legend>
+          <input type="email" name="email" placeholder="введіть ваш E-mail"> <br>
+          <textarea style="width: 100%;" name="message" placeholder="введіть ваше повідомлення "></textarea> <br>
+          <input type="submit" name="submit" value="Надіслати">
+        </fieldset>
+      </form>
+    </div>
+    <div class="socialWrap">
+      <a href="#"><img src="img/fb.png" width="64" height="64" alt="fb"/></a>
+      <a href="#"><img src="img/tw.png" width="64" height="64" alt="tw"/></a>
+      <a href="#"><img src="img/ig.png" width="64" height="64" alt="ig"/></a>
+      <a href="#"><img src="img/yt.png" width="64" height="64" alt="yt"/></a>
+    </div>
+    <div class="footerContent" style="text-align:center"><img src="img/footer-icons-sprite.png" width="85"
+                                                              height="32" alt=""/> <br>&copy; by Dmytro Schyhlewskyi
+    </div>
+  </div>
+</footer>
+
+<div id="scroller" title="To Top"></div>
+<script>
+  $(function () {
+    $(".rslides").responsiveSlides({
+      "auto": true,             // Boolean: Animate automatically, true or false
+      "speed": 500,             // Integer: Speed of the transition, in milliseconds
+      "timeout": 4000,          // Integer: Time between slide transitions, in milliseconds
+      "pager": false,           // Boolean: Show pager, true or false
+      "nav": false,             // Boolean: Show navigation, true or false
+      "random": true,           // Boolean: Randomize the order of the slides, true or false
+      "pause": false,           // Boolean: Pause on hover, true or false
+      "pauseControls": true,    // Boolean: Pause when hovering controls, true or false
+      "prevText": "Previous",   // String: Text for the "previous" button
+      "nextText": "Next",       // String: Text for the "next" button
+      "maxwidth": "",       // Integer: Max-width of the slideshow, in pixels
+      "navContainer": "",       // Selector: Where auto generated controls should be appended to, default is after the <ul>
+      "manualControls": "",     // Selector: Declare custom pager navigation
+      "namespace": "rslides",   // String: change the default namespace used
+      "before": $.noop,         // Function: Before callback
+      "after": $.noop           // Function: After callback
+    });
+  });
+</script>
+
+</body>
+</html>
